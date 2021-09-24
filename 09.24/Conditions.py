@@ -31,3 +31,22 @@ else:
 sz2 = "asda."
 print(sz2[-1])
 
+a, b, c = 4, 5, 7
+
+if a > b and a > c:
+    print(a, "A legnagyobb szam")
+elif b > a and b > c:
+    print(b, "A legnagyobb szam")
+else:
+    print(c, " A legnagyobb szam")
+
+if a < b and a < c:
+    print(a, "A legkisebb szam")
+elif b < a and b < c:
+    print(b, "A legkisebb szam")
+else:
+    print(c, " A legkisebb szam")
+
+char = "a"
+print(char.isascii())
+
