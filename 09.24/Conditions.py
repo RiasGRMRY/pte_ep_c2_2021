@@ -1,3 +1,6 @@
+import random
+
+
 sz1 = "alma"
 
 if sz1[0] == sz1[-1]:
@@ -54,3 +57,29 @@ if char.find(mag) >= 0:
 else:
     print("Mássalhangzó")
 
+grd = random.randint(1, 5)
+print(random.random())
+if grd == 5:
+    print(grd, "= Kiváló")
+elif grd == 4:
+    print(grd, "= Jó")
+elif grd == 3:
+    print(grd, "= Közepes")
+elif grd == 2:
+    print(grd, "= Elégséges")
+else:
+    print(grd, "= Elégtelen")
+
+raw_input_data = input("Adjon meg egy szamot: ")
+try:
+    szam = int(raw_input_data)
+
+    if szam > 10:
+        print("Nagyobb mint 10")
+    elif szam < 10:
+        print("Kisebb mint 10")
+    else:
+        print("A szám egyenlő 10-zel")
+
+except ValueError:
+    print("Hiba! Számot adjon meg.")
