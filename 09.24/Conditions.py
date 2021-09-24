@@ -48,5 +48,9 @@ else:
     print(c, " A legkisebb szam")
 
 char = "a"
-print(char.isascii())
+mag = "aáeéiíoóöőuúüű"
+if char.find(mag) >= 0:
+    print("Magánhangzó")
+else:
+    print("Mássalhangzó")
 
